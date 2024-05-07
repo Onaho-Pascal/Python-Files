@@ -10,8 +10,17 @@ def validateSeq(dna_seq):
     return tnpseq
 
 #to test out this function
+#the "upper.()" function allows python to convert the given string into uppercase letters,
+#then checks to see if they are among the given sting or dictonary in the firstline
+random_DNAstrg1 = "CGGTAAATGCAACG"
+random_DNAstrg2 = "CcgtGacGTGCacatTacG"
+random_DNAstrg3 = "SHGBTACGTCAAGCTACTCTGA"
 
-random_DNAstrg = "CGGTAAATGCAACG"
 
-print(validateSeq(random_DNAstrg))
+
+print(validateSeq(random_DNAstrg1))
+print(validateSeq(random_DNAstrg2))
+print(validateSeq(random_DNAstrg3))
+
+
 
