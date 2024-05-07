@@ -10,8 +10,14 @@ def validateSeq(dna_seq):
     return tnpseq
 
 #to test out this function
+#the ".upper()" function changes any lowercased letter in the string to uppercase and prints it out
+#as long as it is in the original dictonary of Nucleotides as given above
 
-random_DNAstrg = "CGGTAAATGCAACG"
+random_DNAstrg1 = "ACCGTAGTGACGGTGT"
 
-print(validateSeq(random_DNAstrg))
+random_DNAstrg2 = "CCTGCTAcctactg"
+
+print(validateSeq(random_DNAstrg1))
+print(validateSeq(random_DNAstrg2))
+
 
