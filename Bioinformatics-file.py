@@ -9,6 +9,16 @@ def validateSeq(dna_seq):
             return False
     return tnpseq
 
+#now, to generate a random sequence
+
+import random
+
+rndDNAstring = "".join([random.choice(Nucleotides)
+                        for nuc in range(20)])
+
+print(validateSeq(rndDNAstring))
+
+
 #to test out this function
 #the "upper.()" function allows python to convert the given string into uppercase letters,
 #then checks to see if they are among the given sting or dictonary in the firstline
@@ -18,9 +28,18 @@ random_DNAstrg3 = "SHGBTACGTCAAGCTACTCTGA"
 
 
 
-print(validateSeq(random_DNAstrg1))
-print(validateSeq(random_DNAstrg2))
-print(validateSeq(random_DNAstrg3))
+#print(validateSeq(random_DNAstrg1))
+#print(validateSeq(random_DNAstrg2))
+#print(validateSeq(random_DNAstrg3))
 
 
+# now to create a random DNA sequence for testing and counting
+
+def countnucfrequency(seq):
+    tmpfreqdict = {"A": 0, "C": 0, "G": 0, "T":0}
+    for nuc in seq:
+        tmpfreqdict[nuc] += 1
+    return tmpfreqdict
+
+print(countnucfrequency(rndDNAstring))
 
