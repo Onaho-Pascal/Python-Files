@@ -131,23 +131,150 @@
 
 # bill = input("What was the total bill?: ")
 # if bill.isdigit():
-#     tip = input("How much would you like to give? 10, 12, or 15?: ")
-#     if tip in ["10", "12", "15"]:
-#         integer_tip = int(tip)
-#         total_tip = integer_tip / 100
-#         final_bill = float(bill)
-#         percent_bill = total_tip * final_bill
-#         total_final_bill = final_bill + percent_bill
-#         split = input("How many people to split the bill?: ")
-#         people = int(split)
-#         print("Each person should pay: " + "$" + str("{:.2f}".format(total_final_bill / people, 2)))
+#      tip = int(input("How much would you like to give? 10, 12, or 15?: "))
+#      if tip in [10, 12, 15]:
+#          integer_tip = int(tip)
+#          total_tip = integer_tip / 100
+#          final_bill = float(bill)
+#          percent_bill = total_tip * final_bill
+#          total_final_bill = final_bill + percent_bill
+#          split = input("How many people to split the bill?: ")
+#          people = int(split)
+#          print("Each person should pay: " + "$" + str("{:.2f}".format(total_final_bill / people, 2)))
 # else:
-#     print("not valid")
+#      print("not valid")
 
 
-number = input("Type in an even number: ")
-if number % 2 == 0:
-    print("This is an even number")
-else: 
-    print("This is an odd number")
+# number = int(input("Type in an even number: "))
+# if number % 2 == 0:
+#     print("This is an even number")
+# else: 
+#     print("This is an odd number")
+
+
+# height = int(input("What is your height?: "))
+# bill = 0
+# if height > 120:
+#     age = int(input("What is your age?: "))
+#     if age < 12:
+#         bill = 5
+#         print("You can ride, but you have to pay $5")
+#     elif age <= 18:
+#         bill = 7
+#         print("You can ride, but you have to pay $7")
+#     elif age >= 45 and age <=55:
+#         age = "old_age" 
+#         bill = 0
+#         print("You can ride, and it's for free!")
+#     else:
+#         bill = 12
+#     photos = input("Do you want to take photos? Y or N: ")
+#     if photos == "Y":
+#         if age != "old_age":
+#             bill += 3
+#             print(f"Your final bill is ${bill}")
+#         else:
+#             print(f"Your final bill is still ${bill}")
+#     else:
+#         print(f"Your final bill is ${bill}")
+# else:
+#     print("You cannot ride the rollercoaster")
+
+
+
+# Pizza job order programming
+
+# order = input("Thank you for choosing Python Pizza Delivery. What size of Pizza would you like to order? S, M, L:\n")
+
+# if order == "S":
+#     bill = 15
+#     print(f"Your bill is ${bill}")
+#     small_pepps = input("Should Pepperoni be added? Y or N: ")
+#     if small_pepps == "Y":
+#         bill += 2
+#         print("You are to pay an additional $2")
+#     cheese = input("Should extra cheese be added? Y or N: ")
+#     if cheese == "Y":
+#         bill += 1 
+#         print("You are to pay an additional $1")
+#         print(f"Your final bill is ${bill}\nThank you for choosing Python Pizza Deliveries!")
+#     else:
+#         print(f"Your final bill is ${bill}\nThank you for choosing Python Pizza Deliveries!")
+# elif order == "M":
+#     bill = 20
+#     print(f"Your bill is ${bill}")
+#     medium_pepps = input("Should Pepperoni be added? Y or N: ")
+#     if medium_pepps == "Y":
+#         bill += 3
+#         print("You are to pay an additional $3")
+#     cheese = input("Should extra cheese be added? Y or N: ")
+#     if cheese == "Y":
+#         bill += 1
+#         print("You are to pay an additional $1")
+#         print(f"Your final bill is ${bill}\nThank you for choosing Python Pizza Deliveries!")
+#     else:
+#         print(f"Your final bill is ${bill}\nThank you for choosing Python Pizza Deliveries!")
+# elif order == "L":
+#     bill = 25
+#     print(f"Your bill is ${bill}")
+#     large_pepps = input("Should Pepperoni be added? Y or N: ")
+#     if large_pepps == "Y":
+#         bill += 3
+#         print("You are to pay an additional $3")
+#     cheese = input("Should extra cheese be added? Y or N: ")
+#     if cheese == "Y":
+#         bill += 1
+#         print("You are to pay an additional $1")
+#         print(f"Your final bill is ${bill}\nThank you for choosing Python Pizza Deliveries!")
+#     else:
+#         print(f"Your final bill is ${bill}\nThank you for choosing Python Pizza Deliveries!")
+# else:
+#     print("Not a valid option.")
+
+# cheese = input("Should extra cheese be added? Y or N: ")
+# if cheese == "Y":
+#     bill += 1
+#     print("You are to pay an additional $1")
+#     print(f"Your final bill is ${bill}\nThank you for choosing Python Pizza Deliveries!")
+# else:
+#     print(f"Your final bill is ${bill}\nThank you for choosing Python Pizza Deliveries!")
+
+
+name1 = input("What is the first name?: ")
+name2 = input("What is the second name?: ")
+
+combined_names = name1 + name2
+lowercase_name = combined_names.lower()
+
+t = lowercase_name.count("t")
+r = lowercase_name.count("r")
+u = lowercase_name.count("u")
+e = lowercase_name.count("e")
+
+first_digit = t + r + u + e
+
+l = lowercase_name.count("l")
+o = lowercase_name.count("o")
+v = lowercase_name.count("v")
+e = lowercase_name.count("e")
+
+second_digit = l + o + v + e
+
+lovecount = str(first_digit) + str(second_digit)
+final_lovecount = int(lovecount)
+
+if final_lovecount < 10 or final_lovecount > 90:
+    print(f"score is {final_lovecount}, you go together like coke and mentos")
+elif final_lovecount > 40 and final_lovecount < 40:
+    print(f"Your score is {final_lovecount}, you are alright together.")
+else:
+    print(f"Your score is {final_lovecount}.")
+
+    
+
+
+
+
+
+
 
