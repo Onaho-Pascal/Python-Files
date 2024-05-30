@@ -21,3 +21,5 @@ else:
 states_in_nigeria = ["Abia", "Adamawa", "Akwa-ibom", "Anambra", "Bauchi", "Bayelsa", "Benue", "Borno", "Cross-river", "Delta", "Ebonyi", "Edo", "Ekiti", "Enugu"]
 
 print(states_in_nigeria[2])
+print(states_in_nigeria[4])
+
