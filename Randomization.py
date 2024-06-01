@@ -37,3 +37,12 @@ print(states_in_nigeria)
 states_in_nigeria.extend(["Kaduna", "Kano", "Kastina", "Kebbi", "Kogi"])
 
 print(states_in_nigeria)
+
+
+# to randomly decide who pays the bills
+
+bill_payer = ["uche", "chimsom", "pascal", "David", "fafa", "Oge"]
+
+food = len(bill_payer)
+pay =random.randint(0, food - 1)
+print(bill_payer[pay])
