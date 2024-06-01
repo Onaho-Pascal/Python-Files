@@ -16,10 +16,24 @@ else:
      print("Tails")
 
 
-# Lists
+#Lists
 
 states_in_nigeria = ["Abia", "Adamawa", "Akwa-ibom", "Anambra", "Bauchi", "Bayelsa", "Benue", "Borno", "Cross-river", "Delta", "Ebonyi", "Edo", "Ekiti", "Enugu"]
 
 print(states_in_nigeria[2])
 print(states_in_nigeria[4])
 
+# Negative indexing starts from behind
+states_in_nigeria.append("Gombe")
+print(states_in_nigeria)
+
+print(states_in_nigeria[-1])
+
+states_in_nigeria.append("Jigawa")
+print(states_in_nigeria)
+
+#To extend a list, we have to use the extend function
+
+states_in_nigeria.extend(["Kaduna", "Kano", "Kastina", "Kebbi", "Kogi"])
+
+print(states_in_nigeria)
