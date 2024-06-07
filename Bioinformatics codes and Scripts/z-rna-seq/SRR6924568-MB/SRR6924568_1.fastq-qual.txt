@@ -1,0 +1,2 @@
+Total Number of Reads: 3663937
+Reads with 95% High-quality Bases: 2666288

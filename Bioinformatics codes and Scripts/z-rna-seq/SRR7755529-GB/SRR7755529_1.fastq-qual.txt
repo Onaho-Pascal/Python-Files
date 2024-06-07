@@ -1,0 +1,2 @@
+Total Number of Reads: 25
+Reads with 90% High-quality Bases: 12
