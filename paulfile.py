@@ -1,6 +1,6 @@
 name = input("what is your name?")
-if name == "betronel_or_baul":
-    print("Welcome betronel_or_baul")
+if name == "petronel":
+    print("Welcome paul")
 else:
     print("Not authorized")
 
