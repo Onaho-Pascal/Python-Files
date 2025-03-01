@@ -23,15 +23,17 @@ password = "".join(password)
 
 
 #Step 2: Create the prompt for the information to access generated password.
+def password_assignment():
+    try:
+        print("Welcome to this exercise")
+        name = str(input("Input your name: \n"))
+        age = int(input("How old are you?: \n"))
+        if age >= 18:
+            print(f"Welcome, {name}!\nNow, let us give you a password :)")
+            print(f"Your password is\n{password}")
+        else:
+            print("You are not authorized")
+    except ValueError:
+        print("Invalid Input. Please Enter a number.")
 
-try:
-    print("Welcome to this exercise")
-    name = str(input("Input your name: \n"))
-    age = int(input("How old are you?: \n"))
-    if age >= 18:
-        print(f"Welcome, {name}!\nNow, let us give you a password :)")
-        print(f"Your password is\n{password}")
-    else:
-        print("You are not authorized")
-except ValueError:
-    print("Invalid Input. Please Enter a number.")
+password_assignment()
