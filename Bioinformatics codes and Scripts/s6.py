@@ -10,7 +10,7 @@ print(inT, floaT, comP)
 # string
 sstR = 'DNA'
 dstR = "RNA"
-tstR = """DNA'RNA"mRNA"""
+tstR = "''DNA RNA mRNA"
 
 print(sstR, dstR, tstR)
 
@@ -21,4 +21,5 @@ lisT = [1, inT, dstR, "Bio"]; print(lisT)
 tuplE = (1, inT, dstR, "Bio"); print(tuplE)
 
 # dictionary
-dicT = {'key':'value', 1:'one', 'Met':'ATG'}; print(dicT)
+dicT = {'key':'value', 1:'one', 'Met':'ATG'}; 
+print(dicT['Met'])
