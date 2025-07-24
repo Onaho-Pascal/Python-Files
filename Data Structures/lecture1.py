@@ -114,9 +114,40 @@
 # for continent in Continents.keys():
 #     print("{} are countries in {}".format(Continents[continent], continent))
 
-import math
 
-name = 4
-print(math.sqrt(name))
 
-from enum import Enum
+import class_tutorial
+
+#print(class_tutorial.entry("Pascal"))
+
+Pascal = 16
+
+#print(class_tutorial.gate_fee(Pascal))
+
+
+wosan = list(range(1, 11))
+init = 0
+
+
+
+#print(class_tutorial.mean(wosan, init))
+
+score = 100
+
+#print(class_tutorial.calculate_grade(score))
+
+
+class Student:
+    def __init__(self, name, age, grades):
+        self.name = name
+        self.age = age
+        self.grades = grades
+    def average_grade(self):
+        average_ = class_tutorial.mean(self.grades)
+        return f"{self.name} had an average grade of {average_}"
+    
+
+
+student_name = Student("Dominic", 23, [72, 69, 81, 84, 79])
+
+
