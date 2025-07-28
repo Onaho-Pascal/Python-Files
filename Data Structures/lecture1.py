@@ -148,6 +148,10 @@ class Student:
     
 
 
-student_name = Student("Dominic", 23, [72, 69, 81, 84, 79])
+#student_name = Student("Dominic", 23, [72, 69, 81, 84, 79])
 
 
+nums = [3, 5, 7, 9, 11]
+
+for i in nums:
+    print(i)
