@@ -28,7 +28,7 @@ def calculate_grade(score):
     elif score >= 60:
         return "Grade is D"
     else:
-        return "Grade is Fail"
+        return "Grade is Failure"
 
 
 
